@@ -1,9 +1,9 @@
 #!/bin/ksh
 
 print "execute graph"
-
+mkdir /sharedvolume/html
 cd /nmonchart33
-for f in $(ls /sharedvolume/in/*)
+for f in $(ls /sharedvolume/*.nmon)
 do
         print "processing $f"
         fname=`basename $f`
